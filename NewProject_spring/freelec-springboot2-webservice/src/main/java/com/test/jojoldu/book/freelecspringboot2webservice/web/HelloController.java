@@ -13,3 +13,4 @@ public class HelloController{
 
 // 예전에는 @RequestMapping(method = RequestMethod.GET)으로 사용되었었음.
 // 이제 이 프로젝트는 /hello로 요청이 오면 문자열 hello를 반환하는 기능을 가짐
+

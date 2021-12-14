@@ -21,6 +21,7 @@ public class PostsRepositoryTest {
 
     @After // Junit에서 단위 테스트가 끝날 때마다 수행되는 메소드 지정
     public void cleanup() {
+        postsRepository.deleteAll();
     }
 
     @Test

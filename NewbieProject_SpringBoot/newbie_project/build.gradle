@@ -33,8 +33,7 @@ dependencies {
     compileOnly('com.h2database:h2')
     implementation fileTree(dir: 'libs', include:['*.jar'])
     implementation('org.springframework:spring-web:5.1.9.RELEASE')
-
-
+    compileOnly('org.springframework.boot:spring-boot-starter-mustache')
 }
 // 스프링 부트용 Spring Data Jpa 추상화 라이브러리 : 버전에 맞춘 자동 JPA관련 라이브러리 버전 관리
 // h2 : 인메모리 관계형 데이터베이스, 별도의 설치 없이 프로젝트 의존성만으로 관리 가능

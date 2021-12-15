@@ -2,7 +2,7 @@ package com.newbie.springboot.web;
 
 
 import com.newbie.springboot.domain.posts.Posts;
-import com.newbie.springboot.domain.posts.PostsRepository;
+import com.newbie.springboot.service.PostsRepository;
 import com.newbie.springboot.web.dto.PostsSaveRequestDto;
 import com.newbie.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;

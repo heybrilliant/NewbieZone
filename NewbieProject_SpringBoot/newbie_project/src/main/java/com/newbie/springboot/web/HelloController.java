@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping("/hello") // 컨트롤러를 JSON으로 반환하는 컨트롤러로 생성
     public String hello() {
-        return "hello";
+        return "hey there!";
     }
 
     @GetMapping("/hello/dto")

@@ -1,6 +1,7 @@
 package com.newbie.springboot.domain.posts;
 
-import com.newbie.springboot.service.PostsRepository;
+import com.newbie.springboot.service.posts.Posts;
+import com.newbie.springboot.service.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -35,7 +36,7 @@ public class PostsRepositoryTest {
         postsRepository.save(Posts.builder() // 테이블 posts에 값이 없으면 insert, 있으면 update쿼리를 실행
                 .title(title)
                 .content(content)
-                .author("ekshin@email.com")
+                .author("heybrilliante@gmail.com")
                 .build());
 
         // when
@@ -48,9 +49,10 @@ public class PostsRepositoryTest {
         assertThat(posts.getContent()).isEqualTo(content);
     }
 
+    @Test
     public void BaseTimeEntity_등록(){
         //given
-        LocalDateTime now = LocalDateTime.of(2019,6,4,0,0,0);
+        LocalDateTime now = LocalDateTime.of(2021,12,16,0,0,0);
         postsRepository.save((Posts.builder()
                 .title("title"))
                 .content("content")

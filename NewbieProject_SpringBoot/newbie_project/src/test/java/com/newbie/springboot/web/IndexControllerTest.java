@@ -26,7 +26,7 @@ public class IndexControllerTest {
         //then
 
         //assertThat(body).contains("assertThat 왜 오류나는지 아시는 분 ");
-        // 정답~!!! import package를 다른 것으로 했기 때문입니다~~!!!
+        // 정답!!! import package를 다른 것으로 했기 때문입니다~~!!!(-은경이가)
         assertThat(body).contains("스프링부트로 개발하는 뉴비존 프로젝트");
     }
 

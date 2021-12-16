@@ -1,6 +1,5 @@
-package com.newbie.springboot.service;
+package com.newbie.springboot.service.posts;
 
-import com.newbie.springboot.domain.posts.Posts;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PostsRepository extends JpaRepository<Posts, Long> {

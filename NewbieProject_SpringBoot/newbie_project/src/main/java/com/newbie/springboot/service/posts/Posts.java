@@ -1,4 +1,4 @@
-package com.newbie.springboot.domain.posts;
+package com.newbie.springboot.service.posts;
 
 import com.newbie.springboot.domain.BaseTimeEntity;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.newbie.springboot.web.dto;
 
-import com.newbie.springboot.domain.posts.Posts;
+import com.newbie.springboot.service.posts.Posts;
 import lombok.Getter;
 
 @Getter

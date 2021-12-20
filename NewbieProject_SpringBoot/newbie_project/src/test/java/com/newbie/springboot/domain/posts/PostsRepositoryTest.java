@@ -1,7 +1,5 @@
 package com.newbie.springboot.domain.posts;
 
-import com.newbie.springboot.service.posts.Posts;
-import com.newbie.springboot.service.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

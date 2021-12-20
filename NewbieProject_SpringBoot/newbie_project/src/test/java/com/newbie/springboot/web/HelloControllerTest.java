@@ -11,8 +11,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(controllers = HelloController.class)
@@ -23,7 +23,7 @@ public class HelloControllerTest {
 
     @Test
     public void hello가_리턴된다() throws Exception{
-        String hello = "hello";
+        String hello = "hey there2";
 
         mvc.perform(get("/hello")) // MockMvc를 통해 /hello 주소로 HTTP GET 요청
                 .andExpect(status().isOk()) // mvc.perform의 결과를 검증 : 200인지 아닌지 검증
@@ -32,7 +32,7 @@ public class HelloControllerTest {
 
     @Test
     public void helloDto가_리턴된다() throws Exception{
-        String name = "hello";
+        String name = "helloDto";
         int amount = 1000;
 
         mvc.perform(

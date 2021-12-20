@@ -1,7 +1,7 @@
-package com.newbie.springboot.service;
+package com.newbie.springboot.service.posts;
 
-import com.newbie.springboot.service.posts.Posts;
-import com.newbie.springboot.service.posts.PostsRepository;
+import com.newbie.springboot.domain.posts.Posts;
+import com.newbie.springboot.domain.posts.PostsRepository;
 import com.newbie.springboot.web.dto.PostsListResponseDto;
 import com.newbie.springboot.web.dto.PostsResponseDto;
 import com.newbie.springboot.web.dto.PostsSaveRequestDto;

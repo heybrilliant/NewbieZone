@@ -1,7 +1,6 @@
-package hello.hellospring.domain;
+package hello.hellospring.controller;
 
-public class Member {
-
+public class MemberForm {
     private Long id;
     private String name;
     private String pwd;

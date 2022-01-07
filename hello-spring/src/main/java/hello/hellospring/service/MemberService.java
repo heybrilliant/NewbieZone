@@ -4,6 +4,7 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
@@ -20,14 +21,31 @@ public class MemberService {
         result.ifPresent(m -> {
             throw new IllegalStateException("이미 존재하는 회원입니다.");
         });
+
+        값을 바로 꺼내는 건 추천하지않음 orElseget() == 값이 있으면 꺼내고 없으면 이 메소드를 실행해
         */
+        validateDuplicateMember(member); // 중복 회원 검증
+        memberRepository.save(member);
+        return member.getId();
+    }
+
+    private void validateDuplicateMember(Member member) {
         memberRepository.findByName(member.getName())
                         .ifPresent(m -> {
                             throw new IllegalStateException("이미 존재하는 회원입니다.");
                         });
+    }
 
-        memberRepository.save(member);
-        return member.getId();
+
+    /*
+    * 전체 회원 조회
+    * */
+    public List<Member> findMembers() {
+        return memberRepository.findAll();
+    }
+
+    public Optional<Member> findOne(Long memberId){
+        return memberRepository.findById(memberId);
     }
 
 

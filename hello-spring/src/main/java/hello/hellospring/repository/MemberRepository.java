@@ -11,7 +11,7 @@ public interface MemberRepository {
     Optional<Member> findById(Long id);
     Optional<Member> findByName(String name);
     List<Member> findAll();
-
+ 
     // repo에 4가지 기능을 만듬
     // save : 회원이 저장소에 저장이 됨
     // 그 다음부터 이 저장소에서 findById나 findByName으로 찾아올 수 있음
